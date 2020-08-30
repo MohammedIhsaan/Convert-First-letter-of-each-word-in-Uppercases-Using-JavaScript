@@ -1,4 +1,4 @@
-var str = "convert each first letter of word in uppercase using JAVASCRIPT.";
+var str = document.getElementById("string").innerHTML;
 var splitStr = str.toLowerCase().split(/\s+/);
 console.log(splitStr);
 
@@ -10,6 +10,14 @@ for (let i = 0; i < splitStr.length; i++) {
 }
 console.log(finalResultStr);
 ///////// Output : Convert Each First Letter Of Word In Uppercase Using Javascript.
+
+
+////////////////**********USING  CSS PROPERTY*************////////////////////
+var sr = document.getElementById("string");
+sr.style.textTransform = "capitalize";
+///////// Output : Convert Each First Letter Of Word In Uppercase Using JAVASCRIPT.
+//////// but in this case irreguler string not converted.see above last word is not converted
+
 
 ////////////////**********USING  MAP*************////////////////////
 var strArray = splitStr.map((subString) => {
